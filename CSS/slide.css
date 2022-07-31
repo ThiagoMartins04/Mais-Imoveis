@@ -1,0 +1,44 @@
+.slide-bg {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: black;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.slide-wrapper {
+    overflow: hidden;
+}
+
+.slide {
+    display: flex;
+}
+
+.slide:hover {
+    will-change: transform;
+}
+
+.slide li {
+    flex-shrink: 0;
+    width: 80vh;
+    max-width: 800px;
+    margin: 0 20px;
+    opacity: .8;
+    transform: scale(.8);
+    transition: .4s;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .4);
+}
+
+.slide {
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.slide li.active {
+    opacity: 1;
+    transform: scale(1);
+}

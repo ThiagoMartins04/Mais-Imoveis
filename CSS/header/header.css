@@ -1,0 +1,155 @@
+/* Logo */
+
+.logo {
+    max-width: 300px;
+    height: 64px;
+    display: flex;
+    gap: 20px;
+}
+
+/* Navegação */
+
+.navegacao-lista {
+    display: flex;
+    gap: 30px;
+}
+
+.navegacao-lista a {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.15rem;
+}
+
+/* Animação no menu do header */
+
+.navegacao-lista li {
+    position: relative;
+}
+
+.navegacao-lista a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0px;
+    margin-top: 3px;
+    background-color: white;
+    transition: 0.3s;
+    position: absolute;
+}
+
+.navegacao-lista a:hover::after {
+    width: 100%;
+} 
+
+/* Header Geral */
+
+header {
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+}
+
+/* JavaScript */
+
+.bg-preto {
+    background: rgba(0, 0, 0, 0.7);
+    transition: 0.5s;
+}
+
+.header-sumir {
+    top: -84px;
+    transition: 0.3s;
+}
+
+/* Responsivo Geral */
+
+@media (max-width: 1000px) {
+    .logo-item-texto {
+        display: none;
+    }
+    .introducao-conteudo {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .navegacao-lista a {
+        font-size: 1rem;
+    }
+    .navegacao-lista {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 520px) {
+    .navegacao-lista a {
+        font-size: 0.875rem;
+    }
+    header {
+        padding: 10px 15px;
+    }
+}
+@media (max-width: 450px) {
+    .navegacao-lista a::after {
+        margin-top: 0px;
+    }
+
+    header {
+        justify-content: space-around;
+    }
+    
+    .logo {
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #logo {
+        width: 50px;
+        height: 50px;
+    }
+    .navegacao-lista a {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 380px) {
+    #logo {
+        width: 40px;
+        height: 40px;
+    }
+    .navegacao-lista a {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 330px) {
+    #logo {
+        width: 35px;
+        height: 35px;
+    }
+    .navegacao-lista a {
+        font-size: 0.5rem;
+    }
+    header {
+        padding: 0px 10px;
+    }
+}
+
+@media (max-width: 300px) {
+    .navegacao-lista a {
+        font-size: 0.4rem;
+    }
+    #logo {
+        width: 30px;
+        height: 30px;
+    }
+}

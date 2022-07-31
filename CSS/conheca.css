@@ -1,0 +1,38 @@
+.conheca-span {
+    color: #64615F;
+    padding-top: 40px;
+    text-align: center;
+    margin: 0px auto 50px auto;
+    max-width: 80ch;
+    border-left: 1px solid #E5DED8;
+    border-right: 1px solid #E5DED8;
+}
+
+.conheca-titulo {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 50px;
+    max-width: 80ch;
+}
+
+.conheca-paragrafo {
+    max-width: 80ch;
+    margin: 0 auto;
+    border-left: 1px solid #E5DED8;
+    border-right: 1px solid #E5DED8;
+}
+
+.conheca-descricao {
+    color: #262626;
+    margin: 0 auto;
+    max-width: 80ch;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 1.5;
+}
+
+.conheca {
+    margin-bottom: 60px;
+}
+
+/* Responsivo */
