@@ -2,20 +2,20 @@
 
 /* Global */
 
-@import "/CSS/global.css";
+@import "global.css";
 
 /* Video de fundo do início */
 
-@import "/CSS/video-bg.css";
+@import "video-bg.css";
 
 /* Header */
 
-@import "/CSS/header/header.css";
+@import "header/header.css";
 
 /* Conheça */
 
-@import "/CSS/conheca.css";
+@import "conheca.css";
 
 /* Slide fotos */
 
-@import "/CSS/slide.css";
+@import "slide.css";
