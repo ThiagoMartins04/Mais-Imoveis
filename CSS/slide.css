@@ -75,7 +75,7 @@ img {
         margin: 0 10px;
     }
 }
-@media (max-width: 380px) {
+@media (max-width: 400px) {
     .slide li {
         width: 40vh;
         margin: 0 10px;
