@@ -9,14 +9,12 @@ function bgHeader() {
             var navItem = navA[i]
             navItem.style.color = "black"
         }
-        navAfter.style.color = "white"
     } else {
         header.classList.remove('bg-branco')
         for (let i = 0; i < navA.length; i++) {
             var navItem = navA[i]
             navItem.style.color = "white"
         }
-        
     }
 }
 
