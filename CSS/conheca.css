@@ -1,8 +1,8 @@
 .conheca-span {
     color: #64615F;
-    padding-top: 40px;
+    padding-top: 50px;
     text-align: center;
-    margin: 0px auto 50px auto;
+    margin: 0px auto 60px auto;
     max-width: 80ch;
     border-left: 1px solid #E5DED8;
     border-right: 1px solid #E5DED8;
@@ -13,6 +13,8 @@
     color: rgba(0, 0, 0, 0.8);
     margin-bottom: 50px;
     max-width: 80ch;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .conheca-paragrafo {
@@ -36,3 +38,10 @@
 }
 
 /* Responsivo */
+
+@media (max-width: 380px) {
+    .conheca-span {
+        padding-top: 40px;
+        margin: 0 auto 50px auto;
+    }
+}
