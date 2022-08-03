@@ -34,7 +34,6 @@ export default class Slide {
         } else {
             this.dist.startX = event.changedTouches[0].clientX;
             movetype = 'touchmove';
-            console.log(event)
         }
         this.wrapper.addEventListener(movetype, this.onMove)
         this.transition(false);
@@ -90,12 +89,10 @@ export default class Slide {
             const position = this.slidePosition(element);
             return { position, element };
         });
-        console.log(this.slideArray)
     }
 
     slidesIndexNav(index) {
         const last = this.slideArray.length - 1;
-        console.log(last)
         this.index = {
             prev: index ? index - 1 : undefined,
             active: index,

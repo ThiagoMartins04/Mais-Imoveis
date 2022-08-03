@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="CSS/style.css">
 </head>
@@ -16,15 +18,14 @@
         <div>
             <div class="logo">
                 <img id="logo" class="logo-item" src="img/logomarca-icone.png" alt="Logo Mais Imóveis">
-                <img class="logo-item logo-item-texto" src="img/logo-texto.png" alt="">
             </div>
         </div>
         <nav>
             <ul class="navegacao-lista">
-                <li><a href="#informacoes">Informações</a></li>
-                <li><a href="#fotos">Fotos</a></li>
-                <li><a href="#videos">Vídeos</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a class="navegacao-item" href="#fotos">Fotos</a></li>
+                <li><a class="navegacao-item" href="#detalhes">Detalhes</a></li>
+                <li><a class="navegacao-item" href="#localizacao">Localização</a></li>
+                <li><a class="navegacao-item" href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -61,6 +62,15 @@
             <li><img src="img/slide/foto6.jpg" alt=""></li>
         </ul>
     </div>
+
+    <section class="visao-geral">
+        <ul class="visao-geral-container">
+            <li class="visao-geral-item">
+                <h2 class="visao-geral-numero"></h2>
+                <p class="visao-geral-texto"></p>
+            </li>
+        </ul>
+    </section>
 
     <script src="JS/header.js"></script>
     <script type="module" src="JS/script.js"></script>

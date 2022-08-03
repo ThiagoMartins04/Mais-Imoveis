@@ -1,7 +1,7 @@
-.slide-bg {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: black;
+.slide-wrapper {
+    background-color: #262626;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 img {
@@ -23,7 +23,7 @@ img {
 
 .slide li {
     flex-shrink: 0;
-    width: 80vh;
+    width: 100vh;
     max-width: 800px;
     margin: 0 20px;
     opacity: .8;

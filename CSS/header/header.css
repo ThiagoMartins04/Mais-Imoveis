@@ -15,9 +15,9 @@
 }
 
 .navegacao-lista a {
-    color: white;
     text-transform: uppercase;
     font-size: 1.15rem;
+    color: white;
 }
 
 /* Animação no menu do header */
@@ -32,7 +32,7 @@
     height: 2px;
     width: 0px;
     margin-top: 3px;
-    background-color: white;
+    background-color: black;
     transition: 0.3s;
     position: absolute;
 }
@@ -44,7 +44,7 @@
 /* Header Geral */
 
 header {
-    padding: 10px 30px;
+    padding: 20px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,22 +60,14 @@ header {
 
 /* JavaScript */
 
-.bg-preto {
-    background: rgba(0, 0, 0, 0.7);
+.bg-branco {
+    background: white;
     transition: 0.5s;
-}
-
-.header-sumir {
-    top: -84px;
-    transition: 0.3s;
 }
 
 /* Responsivo Geral */
 
 @media (max-width: 1000px) {
-    .logo-item-texto {
-        display: none;
-    }
     .introducao-conteudo {
         display: none;
     }
