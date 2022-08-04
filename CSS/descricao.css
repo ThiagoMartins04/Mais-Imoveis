@@ -1,0 +1,84 @@
+.descricao-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.descricao {
+    padding-bottom: 80px;
+    background-color: #f2f1f0;
+}
+
+.descricao-item {
+    border-bottom: 1px solid #B4B3B3;
+}
+
+.descricao-item:nth-child(1) {
+    border-top:  1px solid #B4B3B3;
+}
+
+.descricao h2 {
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 32px;
+    color: #141414;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+}
+
+.descricao dl > div {
+    padding: 30px 20px 20px 20px;
+}
+
+.descricao button {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-family: 'Arima Madurai';
+    text-align: left;
+    width: 100%;
+    color:  #262626;
+    font-size: 40px;
+    line-height: 1;
+    font-weight: 400;
+}
+
+.descricao button::after {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 6px;
+    background: url("../img/icones/seta-abrir.svg");
+    transition: 0.2s;
+}
+
+.descricao button:hover::after, .descricao button[aria-expanded="true"]::after {
+    transform: rotate(180deg);
+}
+
+.descricao dd {
+    display: none;
+}
+
+.descricao dd.ativa {
+    display: block;
+}
+
+.descricao dd {
+    padding-top: 16px;
+    max-width: 80ch;
+}
+
+/* @media (max-width: 800px) {
+    .descricao {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .descricao h2 {
+        margin-bottom: 40px;
+    }
+} */
