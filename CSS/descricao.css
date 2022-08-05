@@ -82,6 +82,7 @@
 .descricao-lista-item {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     gap: 20px;
     padding: 8px 6px 4px 4px;

@@ -23,7 +23,7 @@ img {
 
 .slide li {
     flex-shrink: 0;
-    width: 700px;
+    width: 600px;
     max-width: 800px;
     margin: 0 10px;
     opacity: .8;
