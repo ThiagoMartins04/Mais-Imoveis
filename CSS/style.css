@@ -27,3 +27,7 @@
 /* Descrição */
 
 @import "descricao.css";
+
+/* Localização (Google Maps) */
+
+@import "localizacao.css";
