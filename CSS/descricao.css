@@ -84,16 +84,19 @@
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    gap: 20px;
     padding: 8px 6px 4px 4px;
     font-family: 'Arima Madurai';
     font-weight: 500;
+    align-items: start;
 }
 
 .descricao-lista-item span {
     font-family: 'Nunito';
-    color: #141414;
+    font-size: 0.875rem;
+    color: #575757;
     font-weight: 400;
+    max-width: 300px;
+    text-align: right;
 }
 
 .descricao-lista-item:nth-child(odd) {
@@ -101,9 +104,32 @@
     border-top: 1px solid #B4B3B3;
 }
 
+.descricao-lista-item:last-child {
+    border-bottom: none;
+}
+
+.descricao-lista-item.condominio::after, .descricao-lista-item.area::after {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/icones/correto.png");
+}
+
 .descricao dd {
     padding-top: 16px;
     max-width: 80ch;
+}
+
+@media (max-width: 640px) {
+    .lista-item-texto {
+        flex-direction: column;
+    }
+    .descricao-lista-item.lista-item-texto span {
+        text-align: start;
+        padding-top: 5px;
+        max-width: max-content;
+    }
 }
 
 @media (max-width: 470px) {
@@ -117,6 +143,11 @@
 @media (max-width: 400px) {
     .descricao button {
         font-size: 1.5rem;
+    }
+    .descricao-lista-item.condominio::after, .descricao-lista-item.area::after {
+        background-image: url("../img/icones/correto-12px.png");
+        width: 12px;
+        height: 12px;
     }
 }
 @media (max-width: 330px) {
