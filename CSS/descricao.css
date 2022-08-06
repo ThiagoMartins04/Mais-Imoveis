@@ -83,11 +83,9 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items: center;
     padding: 8px 6px 4px 4px;
     font-family: 'Arima Madurai';
     font-weight: 500;
-    align-items: start;
 }
 
 .descricao-lista-item span {
@@ -97,6 +95,7 @@
     font-weight: 400;
     max-width: 300px;
     text-align: right;
+    align-self: center;
 }
 
 .descricao-lista-item:nth-child(odd) {
@@ -114,6 +113,7 @@
     width: 16px;
     height: 16px;
     background-image: url("../img/icones/correto.png");
+    align-self: center;
 }
 
 .descricao dd {
@@ -129,20 +129,18 @@
         text-align: start;
         padding-top: 5px;
         max-width: max-content;
+        align-self: start;
     }
 }
 
 @media (max-width: 470px) {
     .descricao button {
-        font-size: 2rem;
-    }
-    .descricao-lista-item, .descricao-lista-item span {
-        font-size: 0.8rem;
+        font-size: 2.3rem;
     }
 }
 @media (max-width: 400px) {
     .descricao button {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     .descricao-lista-item.condominio::after, .descricao-lista-item.area::after {
         background-image: url("../img/icones/correto-12px.png");
@@ -152,9 +150,6 @@
 }
 @media (max-width: 330px) {
     .descricao button {
-        font-size: 1.3rem;
-    }
-    .descricao-lista-item, .descricao-lista-item span {
-        font-size: 0.65rem;
+        font-size: 1.8rem;
     }
 }
