@@ -20,6 +20,8 @@ function bgHeader() {
 
 window.addEventListener('scroll', bgHeader)
 
+// Efeito do Header
+
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
