@@ -107,7 +107,7 @@
     border-bottom: none;
 }
 
-.descricao-lista-item.condominio::after, .descricao-lista-item.area::after {
+.descricao-lista-item.item-checked::after, .descricao-lista-item.item-checked::after {
     content: '';
     display: inline-block;
     width: 16px;
@@ -142,7 +142,7 @@
     .descricao button {
         font-size: 2rem;
     }
-    .descricao-lista-item.condominio::after, .descricao-lista-item.area::after {
+    .descricao-lista-item.item-checked::after, .descricao-lista-item.item-checked::after {
         background-image: url("../img/icones/correto-12px.png");
         width: 12px;
         height: 12px;
