@@ -131,6 +131,9 @@
     .contato-corretor {
         font-size: 0.9rem;
     }
+    .parceiro {
+        font-size: 0.6rem;
+    }
 }
 @media (max-width: 330px) {
     .contato-nome {
@@ -143,13 +146,21 @@
     .contato-corretor {
         font-size: 0.8rem;
     }
+    .parceiro {
+        font-size: 0.5rem;
+    }
+}
+@media (max-width: 335px) {
+    .parceiro {
+        font-size: 0.4rem;
+    }
+    .contato-corretor {
+        margin-top: 5px;
+    }
 }
 @media (max-width: 310px) {
     .contato-cima > img {
         width: 80px;
         height: 80px;
-    }
-    .contato-corretor {
-        margin-top: 0px;
     }
 }
