@@ -1,0 +1,142 @@
+.contato-bg {
+    background-color: #f2f1f0;
+    padding: 80px 20px;
+}
+
+.contato {
+    background-color: white;
+    border-radius: 4px;   
+}
+
+.contato-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contato-conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 60px 0;
+    width: 100%;
+}
+
+.contato-redes-lista {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.contato-cima {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #f2f1f0;
+    margin-bottom: 50px;
+    width: calc(100% - 150px);
+}
+
+.contato-cima > img {
+    margin-bottom: 10px;
+}
+
+.contato-nome {
+    font-family: 'Arima Madurai';
+    font-size: 2.2rem;
+    font-weight: 700;
+    width: 300px;
+    text-align: center;
+}
+
+.contato-corretor {
+    color: #64615F;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.contato-redes-item svg:hover {
+    transition: 0.3s;
+    fill: #BC8F45;
+}
+
+.contato-escrito {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contato-escrito-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contato-escrito-item span {
+    color: #64615F;
+    margin-bottom: 10px;
+}
+
+.contato-escrito-item a {
+    color: black;
+}
+
+.contato-escrito-item a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #BC8F45;
+    transition: 0.3s;
+}
+
+.contato-escrito-item a:hover::after {
+    width: 0px;
+}
+@media (max-width: 900px) {
+    .contato-escrito {
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .contato-escrito {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 360px) {
+    .contato-nome {
+        font-size: 1.8rem;
+    }
+    .contato-cima > img {
+        width: 120px;
+        height: 120px;
+    }
+}
+@media (max-width: 330px) {
+    .contato-nome {
+        font-size: 1.5rem;
+    }
+    .contato-cima > img {
+        width: 100px;
+        height: 100px;
+    }
+    .contato-corretor {
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 310px) {
+    .contato-cima > img {
+        width: 80px;
+        height: 80px;
+    }
+    .contato-corretor {
+        margin-top: 0px;
+    }
+}
