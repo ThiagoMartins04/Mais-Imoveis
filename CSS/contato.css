@@ -39,6 +39,15 @@
     width: calc(100% - 150px);
 }
 
+.parceiro {
+    font-size: 0.7rem;
+    background-color: #64615F;
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: white;
+    
+}
+
 .contato-cima > img {
     margin-bottom: 10px;
 }
@@ -54,7 +63,9 @@
 .contato-corretor {
     color: #64615F;
     margin-bottom: 30px;
-    margin-top: 20px;
+    margin-top: 10px;
+    text-align: center;
+    width: max-content;
 }
 
 .contato-redes-item svg:hover {
@@ -109,7 +120,6 @@
         gap: 30px;
     }
 }
-
 @media (max-width: 360px) {
     .contato-nome {
         font-size: 1.8rem;
@@ -117,6 +127,9 @@
     .contato-cima > img {
         width: 120px;
         height: 120px;
+    }
+    .contato-corretor {
+        font-size: 0.9rem;
     }
 }
 @media (max-width: 330px) {
@@ -128,7 +141,7 @@
         height: 100px;
     }
     .contato-corretor {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 }
 @media (max-width: 310px) {
