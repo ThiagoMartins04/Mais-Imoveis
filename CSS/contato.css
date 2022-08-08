@@ -3,6 +3,10 @@
     padding: 80px 20px;
 }
 
+#contato{
+    overflow-x: hidden;
+}
+
 .contato {
     background-color: white;
     border-radius: 4px;   
