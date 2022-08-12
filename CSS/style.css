@@ -1,41 +1,23 @@
 @charset "UTF-8";
 
-/* Global */
-
 @import "global.css";
-
-/* Video de fundo do início */
 
 @import "video-bg.css";
 
-/* Header */
-
 @import "header/header.css";
-
-/* Conheça */
 
 @import "conheca.css";
 
-/* Slide fotos */
-
 @import "slide.css";
-
-/* Visão Geral */
 
 @import "visao-geral.css";
 
-/* Descrição */
-
 @import "descricao.css";
-
-/* Localização (Google Maps) */
 
 @import "localizacao.css";
 
-/* Contato */
-
 @import "contato.css";
 
-/* Footer */
-
 @import "footer.css";
+
+@import "materia.css";

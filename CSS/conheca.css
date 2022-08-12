@@ -45,4 +45,13 @@
         padding-top: 40px;
         margin: 0 auto 50px auto;
     }
+    .conheca-descricao {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 350px) {
+    .conheca-descricao {
+        font-size: 1rem;
+    }
 }
