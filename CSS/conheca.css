@@ -32,10 +32,57 @@
     margin-right: 20px;
     line-height: 1.5;
     font-size: 18px;
+    text-indent: 1rem;
 }
 
 .conheca {
     margin-bottom: 60px;
+}
+
+/* Botão de mostrar mais */
+
+.conheca-descricao-completa {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s cubic-bezier(0.5, 0, 0.1, 1);
+    color: #262626;
+    margin: 0 auto;
+    max-width: 80ch;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 1.5;
+    font-size: 18px;
+    text-indent: 1rem;
+}
+
+.conheca-botao {
+    background-color: transparent;
+    border: 1px solid #141414;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    font-family: 'Arima Madurai';
+    padding: 10px 20px 10px 15px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.conheca-botao::after {
+    content: '';
+    width: 18px;
+    height: 10px;
+    background: url("../img/icones/seta.svg");
+    display: inline-block;
+    margin-left: 12px;
+    transition: .2s;
+}
+
+.conheca-botao:hover::after {
+    transform: rotate(90deg);
+}
+.conheca-botao.mostrar-ativo:hover::after {
+    transform: rotate(-90deg);
 }
 
 /* Responsivo */
