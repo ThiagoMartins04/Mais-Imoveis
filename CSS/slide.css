@@ -2,11 +2,13 @@
     background-color: #262626;
     padding-top: 80px;
     padding-bottom: 80px;
+    position: relative;
 }
 
 .slide img {
     display: block;
     max-width: 100%;
+    cursor: pointer;
 }
 
 .slide-wrapper {
@@ -43,6 +45,38 @@
     transform: scale(1);
 }
 
+/* Botão de PREV e NEXT */
+
+.prev, .next {
+    border: none;
+    background: url("../img/slide/seta-slide.png") center center no-repeat;
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transform: rotate(45deg);
+    position: absolute;
+    transition: 0.3s;
+}
+
+.prev {
+    transform: rotate(-135deg);
+    left: 20px;
+    top: 40%;
+}
+
+.next {
+    top: 40%;
+    right: 20px;
+}
+
+.prev:hover, .next:hover {
+    width: 120px;
+    height: 120px;
+    top: 38%;
+    box-shadow: 0px 0px 5px rgb(37, 37, 37);
+}
+
 @media (max-width: 930px) {
     .slide li {
         width: 600px;
@@ -52,10 +86,31 @@
     .slide li {
         width: 500px;
     }
+    .next, .prev {
+        top: 38%;
+    }
 }
 @media (max-width: 700px) {
     .slide li {
         width: 400px;
+    }
+    .next, .prev {
+        top: 40%;
+        background: url("../img/slide/seta-slide-25px.png") center center no-repeat;
+        background-color: white;
+        width: 80px;
+        height: 80px;
+    }
+    .next:hover, .prev:hover {
+        width: 85px;
+        height: 85px;
+        top: 40%;
+    }
+    .next {
+        right: 10px;
+    }
+    .prev {
+        left: 10px;
     }
 }
 @media (max-width: 570px) {
@@ -71,6 +126,18 @@
 @media (max-width: 410px) {
     .slide li {
         width: 270px;
+    }
+    .next, .prev {
+        top: 43%;
+        background: url("../img/slide/seta-slide-15px.png") center center no-repeat;
+        background-color: white;
+        width: 65px;
+        height: 65px;
+    }
+    .next:hover, .prev:hover {
+        width: 70px;
+        height: 70px;
+        top: 43%;
     }
 }
 @media (max-width: 380px) {
@@ -90,5 +157,13 @@
 @media (max-width: 320px) {
     .slide li {
         width: 210px;
+    }
+    .next, .prev {
+        width: 50px;
+        height: 50px;
+    }
+    .next:hover, .prev:hover {
+        width: 55px;
+        height: 55px;
     }
 }
